@@ -35,12 +35,14 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-# gem 'debugger'
+gem 'debugger'
 
 group :development, :test do
   gem "rspec-rails"
   gem "cucumber-rails", :require => false
-  gem "webrat"
+  gem 'capybara'
+  gem 'capybara-webkit'  
   gem "database_cleaner"
-  gem "selenium-client"
+  gem 'factory_girl_rails'
+  gem 'launchy'
 end
